@@ -18,10 +18,8 @@ int main(int argc, char *argv[]) // args that are taken to the program
         exit(0);
     }
     if(argc > 2 ){
-        
-
         int i;
-        printf("%d", argc);
+        //Looping through args to cat many files at once if many files are given
         for (i = 1; i <= argc -1 ; ++i){
             size_t linesize = 0;
             char *linebuffer;
@@ -36,7 +34,6 @@ int main(int argc, char *argv[]) // args that are taken to the program
                
                 }
             while (linesize != -1){
-     
                 linesize = getline(&linebuffer, &buffersize, fp);
                 if(linesize == -1){
                     break;
