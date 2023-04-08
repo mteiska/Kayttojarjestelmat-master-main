@@ -1,0 +1,41 @@
+In this task I did my-cat, my-grep and my-zip and my-unzip Unix utilities.
+Every file has basic headers
+For pictures check Documentation.docx file.
+
+usage is normal andas instructed to all utilies for example my-cat: gcc -o my-cat my-cat.c -Wall -Werror
+then run program with wanted args like: ./my-cat main.c
+My-cat:
+    - First we take args from commandline and make variables for program
+   
+    -   Opening the given file in read mode also doing check if file opening failed and resulted into a error
+    -   Then we read lines to a buffer and print the lines out to the user
+
+my-grep:
+    - First we do basic checking for args if they are given or not 
+    - If search term is not given print whole file contents 
+    -Read line from stdin and check if line includes search term
+    - After this we do normal checking if string includes wanted substringg with strstr and if this is true then print the file with wanted term
+    - If multiple files are given loop through args and do normal grepping as many times as there are files given
+
+   
+
+My-zip/my-unzip:
+    Zip:
+        - If no file is given for zipping print instructions on program usage
+        - Run program as many times as there are given files.
+        - Open a file to read and then get characters of a file
+        - then if character that is now read is same as earlier character make count go up by one
+        - then if character is not the same anymore, write 4 - byte integer and character to the file 
+        - Also write after loop the last values of the variables to the file since otherwise the last values would not be written
+
+    Unzip:
+        - Check if file to unzip given
+        - Open file to read and do normal error checking for file opening
+        - Read characters and and print as many characters as the count says
+        - If zipped file consists of multiple files the information of that there were multiple files is lost and 
+
+
+
+
+
+

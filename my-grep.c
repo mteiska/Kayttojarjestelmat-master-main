@@ -26,6 +26,7 @@ int main(int argc, char *argv[]) // komentoriviargumentit jotka otetaan kiinni
         exit(1);
 
     }
+    
         while (linesize != -1){
         linesize = getline(&linebuffer, &buffersize, fp);
         printf("%s", linebuffer);
@@ -36,7 +37,8 @@ int main(int argc, char *argv[]) // komentoriviargumentit jotka otetaan kiinni
     if(argv[2]==NULL){
       char *line_stdin =NULL;
 
-   
+   // Help to stdin reading https://linuxhint.com/read-lines-stdin-c-programming/
+
     printf("Give line to grep:\n");
     linesize = getline(&line_stdin, &buffersize, stdin);
     if(strstr(line_stdin,argv[1])){
@@ -75,6 +77,7 @@ int main(int argc, char *argv[]) // komentoriviargumentit jotka otetaan kiinni
                 exit(1);
 
              }
+            //Advice to how to compare strings http://csourcecodes.blogspot.com/2015/03/c-program-to-simulate-grep-command-in.html
             while (linesize != -1){
                 linesize = getline(&linebuffer, &buffersize, fp);
                 if(strstr(linebuffer,argv[1])){
