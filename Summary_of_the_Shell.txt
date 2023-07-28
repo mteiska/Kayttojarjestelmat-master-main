@@ -1,0 +1,22 @@
+Authors: Kasper Gröhn ja Mika Teiska
+Summary of the Shell-program
+
+Program is a straightforward shell simulator crafted to run user-provided commands. It offers a user-friendly command-line interface, allowing users to input a wide range of commands and execute them seamlessly. The program supports two types of commands: built-in commands, which are part of the shell itself, and external commands, which are executable programs present in the system.
+
+Built-in Commands:
+
+cd: This command is used to change the current working directory of the shell. Users can specify the desired directory as an argument to navigate through the file system.
+
+help: The help command displays a list of basic commands supported by the shell.
+
+exit: When users enter the exit command, the shell terminates, and the program ends its execution.
+
+External Commands:
+Apart from the built-in commands, the Shell goes beyond its basic functionality and extends its capability to execute external commands through the utilization of the fork and execvp system calls. This powerful combination empowers users to run any executable programs available in the system. By simply typing the name of the desired program along with any required arguments, users can effortlessly invoke external commands and perform diverse operations within the shell environment.
+
+Error Handling:
+The program incorporates error handling to provide informative messages in case of unexpected issues. When encountering any errors during execution, the shell will display a standard error message, indicating that an error has occurred. Additionally, some specific error scenarios are covered, such as attempting to execute a non-existent file or encountering errors during the forking process.
+
+Sources
+- https://brennan.io/2015/01/16/write-a-shell-in-c/
+-https://github.com/brenns10/lsh
