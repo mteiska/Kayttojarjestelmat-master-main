@@ -1,4 +1,7 @@
-In this task I did my-cat, my-grep and my-zip and my-unzip Unix utilities.
+Authors: Mika Teiska and Kasper Gröhn.
+
+In this task I did my-cat, my-grep and my-zip and my-unzip Unix utilities. Kasper did other functionalities like unixshell we also together checked when problems arose 
+and figured them out together.
 Every file has basic headers
 For pictures check Documentation.docx file.
 

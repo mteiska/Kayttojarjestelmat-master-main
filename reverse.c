@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h> // define the header file
 #include <string.h>
-
+///Authors: Mika Teiska and Kasper Gröhn.
 typedef struct lista //struct rakenne ja linked lista C-ohjelmoinnin perusteista esimerkkiä
 {
     char line[120];

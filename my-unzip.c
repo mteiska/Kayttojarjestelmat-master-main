@@ -2,6 +2,7 @@
 #include <stdio.h> // define the header file
 #include <string.h>
 
+///Authors: Mika Teiska and Kasper Gröhn.
 int main(int argc, char *argv[]) {
     if (argc < 2) { //If there are less than one file given give instructions on usage.
         printf("my-unzip: file1 [file2 ...]\n");

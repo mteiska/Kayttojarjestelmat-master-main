@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-
+///Authors: Mika Teiska and Kasper Gröhn.
 
 int main(int argc, char *argv[]) // komentoriviargumentit jotka otetaan kiinni
 {

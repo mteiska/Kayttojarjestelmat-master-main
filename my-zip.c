@@ -2,6 +2,8 @@
 #include <stdio.h> // define the header file
 #include <string.h>
 
+
+///Authors: Mika Teiska and Kasper Gröhn.
 int main(int argc, char *argv[]) // args that are caught when running program
 {
      if (argc < 2) { //If there are less than one file given give instructions on usage.
